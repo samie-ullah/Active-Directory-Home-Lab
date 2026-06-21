@@ -1,15 +1,21 @@
 
 # 🖥️ Active Directory Home Lab (Windows Server)
 
+
 ## 📌 Overview
-This project demonstrates the setup and configuration of a Windows Server Active Directory environment with real-world system administration tasks, including user management, file sharing, and Group Policy (GPO).
+This project showcases a hands-on Active Directory lab built using Windows Server, simulating a real-world enterprise environment with user management, file sharing, and Group Policy deployment.
+
 
 ---
 
 ## 🧱 Lab Environment
-- Windows Server (Domain Controller)
-- Windows 11 Client Machine
-- VirtualBox for virtualization
+
+## 🛠️ Technologies Used
+- Windows Server
+- Active Directory (AD DS)
+- Group Policy (GPO)
+- NTFS Permissions
+- VirtualBox
 
 ---
 
@@ -33,10 +39,12 @@ This project demonstrates the setup and configuration of a Windows Server Active
 ---
 
 ### ✅ File Server Setup
+
 - Created shared folders:
-  - \\DC01\HR
-  - \\DC01\IT
-  - \\DC01\Finance
+  - `\\DC01\HR`
+  - `\\DC01\IT`
+  - `\\DC01\Finance`
+
 - Configured:
   - NTFS permissions
   - Share permissions
@@ -78,7 +86,17 @@ This project demonstrates the setup and configuration of a Windows Server Active
 
 ## 📸 Screenshots
 
-(Add your 3 screenshots here)
+
+## 📸 Screenshots
+
+### 🔹 GPO Structure
+images/gpo.png
+
+### 🔹 Drive Mapping
+images/drives.png
+
+### 🔹 User Restrictions
+images/restrictions.png
 
 ---
 
@@ -94,4 +112,8 @@ This project demonstrates the setup and configuration of a Windows Server Active
 - Group Policy Management (GPO)
 - Windows Server
 - Troubleshooting & Problem Solving
+
+## 🔗 Access Model
+
+User → Security Group → File Share → GPO Policy
 
