@@ -29,6 +29,37 @@ This project showcases a hands-on Active Directory lab built using Windows Serve
 
 ---
 
+---
+
+## 🔐 Part 2: Security, Monitoring & Alerting
+
+This phase of the lab focused on securing user accounts, monitoring authentication activity, and responding to security events in a simulated enterprise environment.
+
+### ✅ Security Policies Implemented
+- Configured domain-level password policies (complexity, expiry, history)
+- Implemented account lockout policy after multiple failed login attempts
+- Enforced password change at next logon following administrative resets
+
+### ✅ Monitoring & Investigation
+- Used Windows Event Viewer to analyse authentication events:
+  - Event ID 4625 – Failed logon attempts
+  - Event ID 4740 – Account lockout events
+- Identified source machines using the “Caller Computer Name” field
+- Investigated user lockouts and authentication failures
+
+### ✅ Event-Based Alerting
+- Created an event-triggered task using Task Scheduler
+- Automatically executed an action when an account lockout (Event ID 4740) occurred
+- Verified alert execution during simulated security incidents
+
+### ✅ User Account Lifecycle (Tested)
+- User account lockout after failed logins
+- Administrator investigation via security logs
+- Manual account unlock
+- Password reset with “change at next logon” enforced
+- Successful user re-authentication
+
+
 ### ✅ User & Group Management
 - Created users for each department
 - Implemented Role-Based Access Control (RBAC) using:
