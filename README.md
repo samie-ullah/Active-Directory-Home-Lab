@@ -132,8 +132,6 @@ images/restrictions.png
 ---
 
 ## 🚀 Next Steps
-- Implement account lockout policies
-- Configure password policies
 - Expand into Azure AD / Hybrid Identity
 
 ---
